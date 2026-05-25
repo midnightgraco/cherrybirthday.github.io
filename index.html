@@ -322,7 +322,7 @@
 
     /* ── FILM STRIP ── */
     .film-strip {
-      position:fixed; top:0; height:100vh; width:34px;
+      position:fixed; top:0; height:100vh; width:56px;
       background:#08060c; z-index:10; pointer-events:none;
       overflow:hidden;
     }
@@ -331,7 +331,7 @@
     .film-strip::before {
       content:''; display:block; position:absolute;
       left:50%; transform:translateX(-50%);
-      top:0; width:16px; height:100%;
+      top:0; width:24px; height:100%;
       background-image: repeating-linear-gradient(
         to bottom,
         transparent 0px, transparent 6px,
@@ -340,7 +340,7 @@
         rgba(244,143,177,0.18) 19px, rgba(244,143,177,0.18) 20px,
         transparent 20px, transparent 26px
       );
-      background-size:16px 26px;
+      background-size:24px 28px;
     }
     @media(max-width:800px) { .film-strip { display:none; } }
 
